@@ -12,10 +12,10 @@ def get_nickname(user_id):
     except:
         pass
 
-i = 10000
+i = 19135000-20000 #10000
 while i <= 19135000:
     threads = []
-    for _ in range(100):
+    for _ in range(50):
         thread = threading.Thread(target=get_nickname, args=(i,))
         threads.append(thread)
         thread.start()
